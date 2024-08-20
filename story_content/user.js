@@ -24,7 +24,6 @@ img.onload = function() {
   doc.setTextColor(0, 0, 0); /* Change the RGB text color by changing the numbers between the parentheses */
   doc.setFont('DancingScript-Regular', 'normal');
   doc.text(name, (doc.internal.pageSize.width / 2), 120, null, null, 'center'); /* This tells the PDF to add text to the page. The first argument is the text to add (in this case a JavaScript variable), the second is the x-coordinate (in this case we’re using a function to find a middle point for the document), the third is the y-coordinate (in millimeters), the fourth and fifth arguments are null, and the sixth argument says that the text should be centered */
-   doc.setFont('Lato-Regular', 'normal');
    doc.setFontSize(15);
    doc.text(date, (doc.internal.pageSize.width / 2), 172, null, null, 'center'); /* See above for the full explanation of the doc.text() function */
    doc.save("Certificate.pdf"); /* Swap out ‘Certificate’ with what you want your certificate to be named */
